@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MasterDetailOrnek.MasterDetailOrnek2"
+             >
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menum Lan">
+            <ContentPage.Content>
+                <StackLayout>
+                    <Label Text="Ana Menü 2" FontSize="Medium" HorizontalTextAlignment="Center" />
+                    <BoxView BackgroundColor="Gray" HeightRequest="1" />
+                    <Button x:Name="sayfaBir" 
+                        Text="Birinci Sayfa"
+                        Clicked="sayfaBir_Clicked"/>
+                    <Button x:Name="sayfaIki" 
+                        Text="İkinci Sayfa"
+                            Clicked="sayfaIki_Clicked"
+                        />
+                    <BoxView BackgroundColor="Gray" HeightRequest="1" />
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage>
+            <ContentPage.Content>
+                <Label Text="detail sayfası" FontSize="Medium" HorizontalTextAlignment="Center" />
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
